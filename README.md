@@ -85,19 +85,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-Required env vars:
-```
-ANTHROPIC_API_KEY=
-SUPABASE_URL=
-SUPABASE_SERVICE_KEY=
-CLERK_JWKS_URL=https://<your-clerk-domain>/.well-known/jwks.json
-CLERK_SECRET_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-STRIPE_PRICE_ID=
-ALLOWED_ORIGINS=http://localhost:3000
-```
-
 ### Web
 
 ```bash
@@ -105,16 +92,6 @@ cd apps/web
 cp .env.local.example .env.local   # fill in your keys
 npm install
 npm run dev
-```
-
-Required env vars:
-```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-NEXT_PUBLIC_API_URL=http://localhost:8000
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 ```
 
 ### iOS
